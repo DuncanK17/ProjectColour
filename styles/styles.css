@@ -1,11 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
-    font-family: "Open Sans", sans-serif;
-    background-image: url(/media/images/background.jpg);
+    font-family: "Roboto", sans-serif;
+    background-color: #fefefd;
 }
 
 form {
     position: relative;
     width: 300px;
     height: 300px;
+}
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    animation-duration: 2s;
+    font-size: 5em;
+    animation-delay: 0.3s;
+}
+
+#main-content {
+    position: relative;
+    text-align: center;
+}
+
+article {
+    padding-top: 5%;
+    animation-delay: 0.8s;
+}
+
+form {
+    position: relative;
+    display: inline-block;
+}
+
+footer {
+    position: relative;
+    bottom: 5px;
+    font-size: 10px;
 }

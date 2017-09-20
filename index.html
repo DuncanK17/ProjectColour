@@ -4,30 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <!-- Custom CSS page inladen -->
+    <link rel="stylesheet" type="text/css" href="styles/animate.css" />
+    <!-- Animate.css inladen -->
+    <script src="script.js"></script>
+    <!-- Custom JS inladen -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!-- jQuery inladen -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
-        <h1>Project FireWire</h1>
+        <div class="animated fadeInUp">
+            <h1>Project FireWire</h1>
+        </div>
     </header>
 
     <main>
+        <div id="main-content">
+            <article class="animated bounce">
+                <p>Vul hieronder de desgewenste kleur in van je kledingstuk, en wij regelen de rest!</p>
+            </article>
 
-        <article>
-            <p>Vul hieronder de desgewenste kleur in van je kledingstuk, en wij regelen de rest!</p>
-        </article>
-
-        <form>
-            <input id="color" name="color" type="color">
-        </form>
+            <form>
+                <input id="color" name="color" type="color">
+            </form>
+        </div>
 
     </main>
 
     <footer>
-
+        <p>Made by Frank Solleveld <a href="http://www.ikbenfrank.ml" target="_blank">(Personal Webpage)</a></p>
     </footer>
+
 </body>
 
 </html>
