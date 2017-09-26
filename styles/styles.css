@@ -37,8 +37,23 @@ form {
     display: inline-block;
 }
 
+.colors_object {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
 footer {
     position: relative;
     bottom: 5px;
     font-size: 10px;
+}
+
+#blue {
+    color: blue;
+}
+
+#maple {
+    color: #552f36;
 }
