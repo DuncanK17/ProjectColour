@@ -4,22 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="style/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <!-- Custom CSS page inladen -->
+    <link rel="stylesheet" type="text/css" href="styles/animate.css" />
+    <!-- Animate.css inladen -->
+    <script src="script.js"></script>
+    <!-- Custom JS inladen -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!-- jQuery inladen -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap inladen -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <header>
-
-  </header>
+    <header>
+        <div class="animated fadeInUp">
+            <h1>Project FireWire</h1>
+        </div>
+    </header>
 
     <main>
+        <div id="main-content">
+            <article class="animated bounce">
+                <p>Vul hieronder de desgewenste kleur in van je kledingstuk, en wij regelen de rest!</p>
+            </article>
+
+            <!-- Dit is een simpel form dat in principe niet in het uiteindelijke project zal komen. -->
+            <form>
+                <input id="color" name="color" type="color">
+                <input type="file">
+            </form>
+
+            <p>Hieronder zie je de herfstkleuren van 2017!</p>
+            
+            <!-- Alle kleuren zijn verwerkt in een div, dit omdat ik ze allemaal dezelfde grootte wil hebben en naast elkaar wil hebben staan. -->
+            <div id="colors">
+                <img class="colors_object" src="media/images/AutumnMaple.png"/>
+                <img class="colors_object" src="media/images/grenadine.png"/>
+                <img class="colors_object" src="media/images/navypeony.png"/>
+                <img class="colors_object" src="media/images/shadedspruce.png"/>
+                <img class="colors_object" src="media/images/tawnyport.png"/>
+            </div>
+
+            <!-- Dit wordt de zoekgeschiedenis, verwerkt in een tabel met de Bootstrap looks. -->
+            <div id="history">
+
+                <h4>Zie hier je zoekresultaten van de vorige keren dat je deze leipe software gebruikt hebt.</h4>
+
+                <table class="container table">
+                    <!-- De koppen van de tabel. -->
+                    <thead>
+                        <tr>
+                            <th>Ingescande kleur</th>
+                            <th>Matchende kleur</th>
+                        </tr>
+                    </thead>
+                    <!-- De ingevulde data. -->
+                    <tbody>
+                        <tr>
+                            <td id="blue">Blauw</td>
+                            <td id="maple">Autumn Maple</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+            </div>
+        </div>
 
     </main>
 
     <footer>
-
+        <p>Made by Frank Solleveld <a href="http://www.ikbenfrank.ml" target="_blank">(Personal Webpage)</a></p>
     </footer>
+
 </body>
 
 </html>
